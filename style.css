@@ -1,0 +1,122 @@
+/* import of "Dosis" (font to use) */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+/* settings for the whole page */
+
+:root {
+    --body-background-color: #282c36;
+    --nav-background-color: #20232d;
+    --text-color: #ffffff;
+    --title-color: #ffffff;
+    --nav-text-color: #ffffff;
+    --extra-color: #ffffff;
+}
+
+* {
+    transition: 0.5s;
+}
+
+body {
+    font-family: Dosis;
+    transition: 0.5s;
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+}
+
+
+/* Theme switch */
+
+#themeToggleButton {
+    border: 1px solid var(--body-background-color);
+    background: var(--nav-background-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    font-family: Dosis;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#themeButton {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+
+/* Menüknöpfe (auf/zu) einfärben */
+
+#navOpener {
+    color: var(--text-color);
+    position: fixed;
+}
+
+#navOpenerButton {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#navCloseButton {
+    cursor: pointer;
+}
+
+
+/*navigations-menu */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    background-color: var(--nav-background-color);
+}
+
+
+/* Design für die Links im Menü */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--nav-text-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--extra-color);
+}
+
+.sidenav .navClosebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Einstellungen, für den Inhalt der seite (ausgenommen Menü) */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/* Bei kleinen bildschirmen Menü anpassen */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
