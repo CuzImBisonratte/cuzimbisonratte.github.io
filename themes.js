@@ -22,7 +22,7 @@ ThemeDarkText = "#ffffff";
 ThemeLightText = "#000000";
 
 // Seite - Überschriften
-ThemeDarkTitle = "#6aaa4b";
+ThemeDarkTitle = "#ff8888";
 ThemeLightTitle = "#05386b";
 
 // Besonderheiten
