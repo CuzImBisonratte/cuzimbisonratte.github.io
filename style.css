@@ -17,6 +17,11 @@
     transition: 0.5s;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2.5rem;
+}
+
 body {
     font-family: Dosis;
     transition: 0.25s;
