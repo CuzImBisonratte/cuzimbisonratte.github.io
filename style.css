@@ -55,6 +55,7 @@ body {
 #navOpener {
     color: var(--text-color);
     position: fixed;
+    z-index: 500;
 }
 
 #navOpenerButton {
@@ -123,6 +124,12 @@ body {
     }
     .sidenav a {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #navOpener {
+        display: none;
     }
 }
 
