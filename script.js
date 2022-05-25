@@ -20,3 +20,12 @@ for (var i = 0; i < flex.length; i++) {
         flex[i].children[j].style.order = Math.floor(Math.random() * 10);
     }
 }
+
+// When the user scrolls more than 50px from the top of the document, hide #themeButton by turning opacity to 0
+window.onscroll = function() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("themeButton").style.opacity = "0";
+    } else {
+        document.getElementById("themeButton").style.opacity = "1";
+    }
+}
