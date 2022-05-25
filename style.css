@@ -197,3 +197,61 @@ Projects Cards
     color: var(--extra-color);
     transform: scale(1.05);
 }
+
+
+/* 
+About section
+*/
+
+#about {
+    margin-top: 5rem;
+}
+
+#about_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.about_card {
+    padding: 1.5rem;
+    width: 60%;
+    min-width: 17.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: 10rem;
+    min-height: min-content;
+    position: relative;
+}
+
+.about_card:hover {
+    /* Make 'em more responsive looking */
+    transform: scale(1.01);
+}
+
+#about_card_1 {
+    background-color: #5CAFF8;
+}
+
+#about_card_2 {
+    background-color: #cE422f;
+}
+
+#about_card_3 {
+    background-color: #883EAD;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex div {
+    margin: 0.75rem;
+}
+
+.flex div:hover {
+    transform: scale(1.1);
+}
