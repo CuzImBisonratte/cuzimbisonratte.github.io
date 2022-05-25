@@ -183,7 +183,7 @@ Projects Cards
 .learnmore_button {
     position: absolute;
     bottom: 30px;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     background: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     text-transform: uppercase;
@@ -193,7 +193,7 @@ Projects Cards
 }
 
 .learnmore_button:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.25);
     color: var(--extra-color);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
