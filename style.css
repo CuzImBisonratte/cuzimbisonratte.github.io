@@ -150,8 +150,8 @@ Projects Cards
     min-width: 17.5rem;
     border-radius: 1rem;
     margin: 1rem;
-    height: 20rem;
-    min-height: min-content;
+    height: min-content;
+    min-height: 20rem;
     position: relative;
 }
 
@@ -225,8 +225,8 @@ About section
     min-width: 17.5rem;
     border-radius: 1rem;
     margin: 1rem;
-    height: 10rem;
-    min-height: min-content;
+    height: min-content;
+    min-height: 10rem;
     position: relative;
 }
 
