@@ -304,3 +304,17 @@ Contact
     background-color: #5CAFF8;
 }
 
+
+/* 
+Footer
+*/
+
+#footer {
+    text-align: center;
+}
+
+#footer a,
+#footer a:visited {
+    text-decoration: none;
+    color: var(--nav-background-color);
+}
