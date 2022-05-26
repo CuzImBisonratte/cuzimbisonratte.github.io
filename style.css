@@ -267,3 +267,40 @@ About section
 .flex div:hover {
     transform: scale(1.1);
 }
+
+
+/* 
+Contact
+*/
+
+#contact {
+    margin-top: 5rem;
+}
+
+#contact_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.contact_card {
+    padding: 1.5rem;
+    width: 30%;
+    min-width: 17.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: min-content;
+    min-height: 10rem;
+    position: relative;
+}
+
+.contact_card:hover {
+    /* Make 'em more responsive looking */
+    transform: scale(1.025);
+}
+
+#contact_card_1 {
+    background-color: #5CAFF8;
+}
+
