@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuzImBisonratte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Button to change the themes -->
+    <div id="themeButton">
+        <button id="themeToggleButton" onclick="toggleTheme()">Darkmode/Lightmode</button>
+    </div>
+
+    <!-- Content of the navigation-bar -->
+    <div id="sideNav" class="sidenav">
+        <span id="navCloseButton" class="navClosebtn" onclick="closeNav()">&times;</span>
+        <a href="../#start">Start</a>
+        <a href="../#projects">Projekte</a>
+        <a href="../#about">Über mich</a>
+        <a href="../#contact">Kontakt</a>
+    </div>
+
+    <!-- Button to open the navigation-bar -->
+    <div id="navOpener">
+        <span id="navOpenerButton" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- Main content -->
+    <div id="main">
+
+        <!-- Privacy section -->
+        <div id="privacy" class="main_sections">
+            <h1>Datenschutzerklärung</h1>
+            <div id="privacy_cards">
+                <div class="privacy_card" id="privacy_card_1">
+                    <h2>Nichtanwendung der DSGVO</h2>
+                    <p>
+                        Die DSGVO gilt (nach Art.2 Nr.2 Abs.C) nicht für diese Website, da hier keine personenbezogenen Daten gespeichert werden und diese Website nur zu Informationszwecken über mich selbst und meine Projekte dient.
+                    </p>
+                </div>
+                <div class="privacy_card" id="privacy_card_2">
+                    <h2>Verarbeitung der Daten</h2>
+                    <p>
+                        Beim Aufrufen dieser Website werden keine Daten gespeichert, die einer Person zugeordnet werden könnten.
+                    </p>
+                    <p>
+                        Sollten sie das Kontaktformular benutzen, werden die Daten nur zum Zwecke der Kontaktaufnahme gespeichert.
+                    </p>
+                </div>
+                <div class="privacy_card" id="privacy_card_3">
+                    <h2>Kontakt</h2>
+                    <p>
+                        Bei weiteren Fragen zum Datenschutz biete ich mich gerne unter <a href="mailto:cuzimbisonratte@gmail.com">cuzimbisonratte@gmail.com</a> an.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All scripts -->
+    <script src="script.js"></script>
+    <script src="themes.js"></script>
+</body>
+
+</html>
