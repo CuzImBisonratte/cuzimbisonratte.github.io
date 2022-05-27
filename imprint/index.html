@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuzImBisonratte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Button to change the themes -->
+    <div id="themeButton">
+        <button id="themeToggleButton" onclick="toggleTheme()">Darkmode/Lightmode</button>
+    </div>
+
+    <!-- Content of the navigation-bar -->
+    <div id="sideNav" class="sidenav">
+        <span id="navCloseButton" class="navClosebtn" onclick="closeNav()">&times;</span>
+        <a href="../#start">Start</a>
+        <a href="../#projects">Projekte</a>
+        <a href="../#about">Über mich</a>
+        <a href="../#contact">Kontakt</a>
+    </div>
+
+    <!-- Button to open the navigation-bar -->
+    <div id="navOpener">
+        <span id="navOpenerButton" onclick="openNav()">&#9776;</span>
+    </div>
+
+    <!-- Main content -->
+    <div id="main">
+
+        <!-- Imprint section -->
+        <div id="imprint" class="main_sections">
+            <h1>Impressum</h1>
+            <div id="imprint_cards">
+                <div class="imprint_card" id="imprint_card_1">
+                    <h2>Nichtanwendung der Impressumspflicht des TMG</h2>
+                    <p>
+                        Die impressumspflicht lautet (nach §5 Abs. 1 Satz 1 des TMG) nicht für diese Website, da diese Website keinerlei zu geschäftsmäßigen Zwecken genutzt wird und diese Website nur zu Informationszwecken über mich selbst und meine Projekte dient.
+                    </p>
+                </div>
+                <div class="imprint_card" id="imprint_card_2">
+                    <h2>Kontakt</h2>
+                    <p>
+                        Bei sonstigen Anfragen können sie mich unter <a href="mailto:cuzimbisonratte@gmail.com">cuzimbisonratte@gmail.com</a> erreichen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All scripts -->
+    <script src="script.js"></script>
+    <script src="themes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+/* import of "Dosis" (font to use) */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+/* settings for the whole page */
+
+:root {
+    --body-background-color: #282c36;
+    --nav-background-color: #20232d;
+    --text-color: #ffffff;
+    --title-color: #ffffff;
+    --nav-text-color: #ffffff;
+    --extra-color: #ffffff;
+}
+
+* {
+    transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2.5rem;
+}
+
+body {
+    font-family: Dosis;
+    transition: 0.25s;
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+}
+
+
+/* Theme switch */
+
+#themeToggleButton {
+    border: 1px solid var(--body-background-color);
+    background: var(--nav-background-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    font-family: Dosis;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#themeButton {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+
+/* Menüknöpfe (auf/zu) einfärben */
+
+#navOpener {
+    color: var(--text-color);
+    position: fixed;
+    z-index: 500;
+}
+
+#navOpenerButton {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#navCloseButton {
+    cursor: pointer;
+}
+
+
+/*navigations-menu */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    background-color: var(--nav-background-color);
+}
+
+
+/* Design für die Links im Menü */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--nav-text-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--extra-color);
+}
+
+.sidenav .navClosebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Einstellungen, für den Inhalt der seite (ausgenommen Menü) */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/* Bei kleinen bildschirmen Menü anpassen */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #navOpener {
+        display: none;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--title-color);
+    text-align: center;
+}
+
+
+/*
+Projects Cards
+*/
+
+#imprint_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.imprint_card {
+    padding: 1.5rem;
+    width: 60%;
+    min-width: 17.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: min-content;
+    min-height: 10rem;
+    position: relative;
+}
+
+.imprint_card:hover {
+    /* Make 'em more responsive looking */
+    transform: scale(1.10);
+    box-shadow: 0px 0px 0.5rem var(--extra-color);
+}
+
+#imprint_card_1 {
+    background-color: #5CAFF8;
+}
+
+#imprint_card_2 {
+    background-color: #cE422f;
+}
+
+
+/* 
+Footer
+*/
+
+#footer {
+    text-align: center;
+}
+
+#footer a,
+#footer a:visited {
+    text-decoration: none;
+    color: var(--nav-background-color);
+}
