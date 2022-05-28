@@ -55,7 +55,6 @@ body {
 #navOpener {
     color: var(--text-color);
     position: fixed;
-    z-index: 500;
 }
 
 #navOpenerButton {
