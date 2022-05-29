@@ -27,6 +27,7 @@ body {
     transition: 0.25s;
     background-color: var(--body-background-color);
     color: var(--text-color);
+    margin: 0px;
 }
 
 
@@ -55,11 +56,14 @@ body {
 #navOpener {
     color: var(--text-color);
     position: fixed;
+    top: 1rem;
+    left: 1rem;
 }
 
 #navOpenerButton {
-    font-size: 30px;
+    font-size: 2rem;
     cursor: pointer;
+    top: 0px;
 }
 
 #navCloseButton {
