@@ -6,7 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CuzImBisonratte</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+         :root {
+            --body-background-color: #282c36;
+            --nav-background-color: #20232d;
+            --text-color: #ffffff;
+            --title-color: #ffffff;
+            --nav-text-color: #ffffff;
+            --extra-color: #ffffff;
+        }
+        
+        * {
+            transition: 0.5s;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 2.5rem;
+        }
+        
+        body {
+            font-family: Dosis;
+            transition: 0.25s;
+            background-color: var(--body-background-color);
+            color: var(--text-color);
+            margin: 0px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: var(--title-color);
+            text-align: center;
+        }
+        
+        #error_cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        .error_card {
+            padding: 1.5rem;
+            width: 25%;
+            min-width: 17.5rem;
+            border-radius: 1rem;
+            margin: 1rem;
+            height: min-content;
+            min-height: 20rem;
+            position: relative;
+            background-color: #cE422f;
+            filter: blur(2px) grayscale(1);
+        }
+        
+        .error_card_active {
+            filter: blur(0) grayscale(0) !important;
+            z-index: 1;
+        }
+        
+        .error_card_active:hover {
+            transition: 0.5s;
+            transform: scale(1.05) rotate(1deg);
+            box-shadow: 0px 0px 0.5rem var(--extra-color);
+        }
+        
+        .start_button {
+            position: absolute;
+            bottom: 30px;
+            color: rgba(255, 255, 255, 0.6);
+            background: rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            border-radius: 100vmax;
+            padding: 0.5rem 1rem;
+            text-transform: uppercase;
+        }
+        
+        .error_card_active .start_button:hover {
+            background: rgba(0, 0, 0, calc(1/3));
+            color: var(--extra-color);
+            transform: scale(1.05) rotate(-1deg);
+            cursor: pointer;
+        }
+        
+        #footer {
+            text-align: center;
+        }
+        
+        #footer a,
+        #footer a:visited {
+            text-decoration: none;
+            color: var(--nav-background-color);
+        }
+    </style>
 </head>
 
 <body>
@@ -82,7 +174,39 @@
 
 
     <!-- All scripts -->
-    <script src="script.js"></script>
+    <script>
+        // Check if an error code is present in the URL
+        if (location.href.indexOf("?e=") > -1) {
+
+            // Get the error code
+            var error = location.href.match(/\?e=([0-9]+)/)[1];
+
+            // Check if an element with error_card_[code] exists
+            if (document.getElementById("error_card_" + error)) {
+
+                // Add the class error_card_active to the element with error_card_[code]
+                document.getElementById("error_card_" + error).classList.add("error_card_active");
+
+                // Smooth scroll to the element with error_card_[code]
+                document.getElementById("error_card_" + error).scrollIntoView({
+                    behavior: "auto",
+                    block: "end"
+                });
+
+            } else {
+
+                // Add the class error_card_active to the element with error_card_404
+                document.getElementById("error_card_404").classList.add("error_card_active");
+
+            }
+
+        } else {
+
+            // Redirect to the start page
+            window.location.href = "../index.html";
+
+        }
+    </script>
 </body>
 
 </html>
