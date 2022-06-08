@@ -1,0 +1,107 @@
+/* import of "Dosis" (font to use) */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+/* settings for the whole page */
+
+:root {
+    --body-background-color: #282c36;
+    --nav-background-color: #20232d;
+    --text-color: #ffffff;
+    --title-color: #ffffff;
+    --nav-text-color: #ffffff;
+    --extra-color: #ffffff;
+}
+
+* {
+    transition: 0.5s;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 2.5rem;
+}
+
+body {
+    font-family: Dosis;
+    transition: 0.25s;
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+    margin: 0px;
+}
+
+
+/* Theme switch */
+
+#themeToggleButton {
+    border: 1px solid var(--body-background-color);
+    background: var(--nav-background-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    font-family: Dosis;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#themeButton {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+
+/*
+Projects Cards
+*/
+
+#maintenance_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.maintenance_card {
+    padding: 1.5rem;
+    width: 25%;
+    min-width: 17.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    height: min-content;
+    min-height: 20rem;
+    position: relative;
+}
+
+.maintenance_card h2 {
+    text-align: center;
+}
+
+.maintenance_card:hover {
+    /* Make 'em more responsive looking */
+    transform: scale(1.05) rotate(0.5deg);
+    box-shadow: 0px 0px 0.5rem var(--extra-color);
+}
+
+#maintenance_card_1 {
+    background-color: #5CAFF8;
+}
+
+#maintenance_card_2 {
+    background-color: #cE422f;
+}
+
+
+/* 
+Footer
+*/
+
+#footer {
+    text-align: center;
+}
+
+#footer a,
+#footer a:visited {
+    text-decoration: none;
+    color: var(--nav-background-color);
+}
