@@ -145,7 +145,7 @@
                     <a href="../index.html" class="start_button">Zur Startseite</a>
                 </div>
             </div>
-            <div class="error_card" id="error_card_503">
+            <div class="error_card  error_card_active" id="error_card_503">
                 <h2>Fehler 503</h2>
                 <p>
                     Der Server kann die Anfrage nicht bearbeiten (weil er überlastet ist oder wegen Wartungsarbeiten ausfällt).
@@ -171,42 +171,6 @@
         <a href="./privacy/">Datenschutz</a><br>
         <a href="./imprint/">Impressum</a><br>
     </p>
-
-
-    <!-- All scripts -->
-    <script>
-        // Check if an error code is present in the URL
-        if (location.href.indexOf("?e=") > -1) {
-
-            // Get the error code
-            var error = location.href.match(/\?e=([0-9]+)/)[1];
-
-            // Check if an element with error_card_[code] exists
-            if (document.getElementById("error_card_" + error)) {
-
-                // Add the class error_card_active to the element with error_card_[code]
-                document.getElementById("error_card_" + error).classList.add("error_card_active");
-
-                // Smooth scroll to the element with error_card_[code]
-                document.getElementById("error_card_" + error).scrollIntoView({
-                    behavior: "auto",
-                    block: "end"
-                });
-
-            } else {
-
-                // Add the class error_card_active to the element with error_card_404
-                document.getElementById("error_card_404").classList.add("error_card_active");
-
-            }
-
-        } else {
-
-            // Redirect to the start page
-            window.location.href = "../index.html";
-
-        }
-    </script>
 </body>
 
 </html>
